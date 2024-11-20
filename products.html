@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Css/general.css">
+    <link rel="stylesheet" href="Css/products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>TiendaOnline</h1>
+        </div>
+        <nav class="nav">
+            <a href="home.html">Inicio</a>
+            <a href="products.html">Productos</a>
+            <a href="carrito.html" class="btnCar" id="btnCar"><i class="fas fa-shopping-cart"></i></a>
+            <a href="inventario.html" class="btnInventory" id="btnInventory">Inventario</a>
+            <a href="login.html" class="btnLogin" id="btnLogin"></a>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <form id="filtroForm">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="">Todas</option>
+                <option value="Ropa y Accesorios">Ropa y Accesorios</option>
+                <option value="Hogar y Oficina">Hogar y Oficina</option>
+                <option value="Salud y Bienestar">Salud y Bienestar</option>
+                <option value="Alimentos y Bebidas">Alimentos y Bebidas</option>
+                <option value="Tecnología y Gadgets">Tecnología y Gadgets</option>
+                <option value="Productos Ecológicos">Productos Ecológicos</option>
+                <option value="Hogar y Decoración">Hogar y Decoración</option>
+            </select>
+    
+            <label for="orden">Ordenar por:</label>
+            <select id="orden">
+                <option value="">Sin orden</option>
+                <option value="precio_asc">De precio menor a mayor</option>
+                <option value="precio_desc">De precio mayor a menor</option>
+                <option value="popularidad_asc">Menos populares a más populares</option>
+                <option value="popularidad_desc">Más populares a menos populares</option>
+            </select>
+    
+            <button type="submit">Filtrar</button>
+        </form>
+    
+        <div class="products-container">
+            <h2>Productos</h2>
+    
+            <div id="products-list" class="products-list">
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TiendaOnline. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Js/products.js"></script>
+</body>
+</html>

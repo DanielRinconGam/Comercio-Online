@@ -1,0 +1,120 @@
+/* Estilo para la sección del baner*/
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url('../Assets/Imagenes/Baner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    position: absolute;
+    text-align: center;
+}
+
+.btnProductos {
+    padding: 15px 30px;
+    background-color: #ed6022;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnProductos:hover {
+    background-color: #e64a19;
+}
+
+/* Contenedor para la lista de productos */
+.products-container {
+    padding: 20px; 
+    box-sizing: border-box;
+}
+.products-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    width: 250px;
+    height: 360px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item h3 {
+    margin: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.category-text {
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.price-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-item button {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #ed6022;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 150px;
+    text-align: center;
+}
+
+.product-item button:hover {
+    background-color: #e64a19;
+}

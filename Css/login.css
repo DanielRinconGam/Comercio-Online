@@ -1,0 +1,98 @@
+/* Estilo general de la página (para centrar el contenedor de login) */
+body, html {
+    height: 100%; /* Asegura que el body y html ocupen todo el alto de la pantalla */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0; /* Fondo gris suave para toda la página */
+}
+
+/* Estilo del contenedor de login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Estilo de los inputs */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+/* Efecto al enfocar en el input */
+.form-group input:focus {
+    border-color: #666;
+    outline: none;
+}
+
+/* Estilo del mensaje de error */
+.error_login {
+    color: #e74c3c; /* Rojo para el mensaje de error */
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del botón de login */
+button#loginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#loginBtn:hover {
+    background-color: #000;
+}
+
+/* Estilo del enlace para regresar a la tienda */
+.home-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #333;
+}
+
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+}
