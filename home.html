@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaOnline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Css/general.css">
+    <link rel="stylesheet" href="Css/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>TiendaOnline</h1>
+        </div>
+        <nav class="nav">
+            <a href="home.html">Inicio</a>
+            <a href="products.html">Productos</a>
+            <a href="" class="btnCar" id="btnCar"><i class="fas fa-shopping-cart"></i></a>
+            <a href="inventario.html" class="btnInventory" id="btnInventory">Inventario</a>
+            <a href="login.html" class="btnLogin" id="btnLogin"></a>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenidos a nuestra tienda online</h1>
+                <a href="products.html">
+                    <button id="btnProductos" class="btnProductos">Ver Productos</button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="products-container">
+            <h2>Productos Sugeridos</h2>
+            <div id="products-list" class="products-list">
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TiendaOnline. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="Js/home.js"></script>
+</body>
+</html>
