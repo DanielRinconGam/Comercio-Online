@@ -16,8 +16,8 @@ Antes de proceder con el despliegue, asegúrate de tener instalado lo siguiente:
 1. Clona el repositorio en tu máquina local en la carpeta **htdocs** de XAMPP. Para hacer esto, abre una terminal y ejecuta:
 
    ```bash
-   cd c:/xampp/htdocs
-   git clone https://github.com/DanielRinconGam/Comercio-Online.git
+      cd c:/xampp/htdocs
+      git clone https://github.com/DanielRinconGam/Comercio-Online.git
    ```
    
 ### Paso 2: Subir la base de datos
@@ -32,9 +32,9 @@ Antes de proceder con el despliegue, asegúrate de tener instalado lo siguiente:
 
 1. Si no tienes las dependencias usa el siguiente comando.
 
-  ```bash
-  pip install flask flask-cors mysql-connector
-  ```
+   ```bash
+      pip install flask flask-cors mysql-connector
+   ```
 
 ### Paso 4: Ejecutar la API
 
@@ -46,9 +46,9 @@ Antes de proceder con el despliegue, asegúrate de tener instalado lo siguiente:
 
 2. Los usuarios válidos son los siguientes:
 
-  | Correo               | Contraseña |
-  |----------------------|------------|
-  | admin@admin.com      | admin      |
-  | user@user.com        | user       |
+     | Correo               | Contraseña |
+     |----------------------|------------|
+     | admin@admin.com      | admin      |
+     | user@user.com        | user       |
 
 
